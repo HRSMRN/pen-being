@@ -1,13 +1,19 @@
 @use '../config/config' as *;
 
 #signup {
+  padding-top: 2rem;
+
+  .navigation-bar {
+    margin-bottom: 2rem;
+  }
+
   .signup {
     &--page {
       display: flex;
       height: 100vh;
 
       img {
-        width: 40%;
+        width: 50%;
         height: inherit;
       }
     }

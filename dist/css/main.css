@@ -158,12 +158,18 @@ img {
   transform: translateX(-25%);
 }
 
+#signup {
+  padding-top: 2rem;
+}
+#signup .navigation-bar {
+  margin-bottom: 2rem;
+}
 #signup .signup--page {
   display: flex;
   height: 100vh;
 }
 #signup .signup--page img {
-  width: 40%;
+  width: 50%;
   height: inherit;
 }
 #signup .signup--form {
