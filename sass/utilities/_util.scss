@@ -1,0 +1,169 @@
+@use '../config/config' as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+}
+
+html {
+  font-size: 18px;
+  line-height: 1.4;
+  color: $primary-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 1.2rem;
+}
+.p-3 {
+  padding: 0.8rem;
+}
+
+.py-1 {
+  padding: 2rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 1rem 0;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.navigation-bar {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+
+  .logo {
+    font-weight: 700;
+    width: min-content;
+    line-height: 1;
+    margin: 0 4rem;
+    cursor: pointer;
+  }
+
+  .links {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 1.5rem;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      margin: 0 4rem;
+    }
+  }
+}
+
+%btn-extended {
+  padding: 0.5rem 1.625rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn {
+  &-primary {
+    @extend %btn-extended;
+    color: $light-color;
+    background-color: $primary-color;
+    font-size: 1em;
+
+    &-transparent {
+      @extend %btn-extended;
+      border: 1px $primary-color solid;
+      background-color: $light-color;
+      color: $primary-color;
+      font-size: 1em;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem 5rem;
+  height: 430px;
+  width: 350px;
+  box-shadow: 1px 1px 1px #333;
+
+  &-wrapper {
+    position: relative;
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .currency {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 0 auto;
+  }
+}
+
+.bottom-line {
+  position: relative;
+  margin-bottom: 3rem;
+  height: 1.5px;
+  background-color: #e6e6e6;
+  width: 130%;
+  left: -15%;
+}
+
+.membership {
+  height: 520px;
+  transform: translateX(-25%);
+}

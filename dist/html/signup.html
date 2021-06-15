@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Pen Beings.</title>
+  </head>
+  <body>
+    <section id="signup" class="py-1">
+      <nav class="navigation-bar">
+        <span class="logo">Pen Beings.</span>
+        <ul class="links">
+          <li>Home</li>
+          <li>Read</li>
+          <li>Listen</li>
+          <li>Write</li>
+          <a href="./dist/html/signup.html" class="btn-primary">
+            Sign Up
+          </a>
+        </ul>
+      </nav>
+      <div class="signup--page">
+        <img src="../img/signup.png" alt="" />
+
+        <div class="signup--form">
+          <h1 class="center">Sign Up to Pen Beings</h1>
+          <h3 class="center">
+            Please fill in the form to create an account
+          </h3>
+          <form>
+            <input
+              type="text"
+              placeholder="First Name"
+              class="first-name"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="last-name"
+            />
+            <input type="email" placeholder="Email" class="email" />
+            <input
+              type="password"
+              placeholder="Password"
+              class="password"
+            />
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              class="confirm-password"
+            />
+            <div>
+              <input
+                type="checkbox"
+                name="agreement"
+                id="agreement"
+              />
+              <label for="agreement">
+                I accept the <a href="#">Terms to Use</a> &
+                <a href="#">Privacy Policy.</a>
+              </label>
+            </div>
+
+            <input
+              type="button"
+              value="Sign Up"
+              class="btn-primary"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

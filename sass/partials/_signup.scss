@@ -1,0 +1,70 @@
+@use '../config/config' as *;
+
+#signup {
+  .signup {
+    &--page {
+      display: flex;
+      height: 100vh;
+
+      img {
+        width: 40%;
+        height: inherit;
+      }
+    }
+
+    &--form {
+      margin: 5rem auto;
+      width: 40%;
+
+      h1 {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        color: $dark-color;
+      }
+
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        color: #263238;
+        font-size: 1em;
+
+        a {
+          color: $primary-color;
+        }
+
+        input {
+          padding: 1rem;
+          font-size: 1em;
+          outline: 0;
+          height: 50px;
+          border-radius: 5px;
+          border: 2px solid #263238;
+          flex-basis: 100%;
+
+          &:nth-child(1),
+          &:nth-child(2) {
+            flex-basis: 40%;
+          }
+
+          &[type="checkbox"] {
+            height: 15px;
+            width: 15px;
+            margin-right: 1rem;
+          }
+
+          &[type="button"] {
+            border: none;
+            height: auto;
+            width: 150px;
+            font-weight: 700;
+            flex-basis: 30%;
+          }
+        }
+      }
+    }
+  }
+}
