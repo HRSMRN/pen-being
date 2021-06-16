@@ -49,12 +49,12 @@
           height: 50px;
           border-radius: 5px;
           border: 2px solid #263238;
-          flex-grow: 1;
+          flex: 1;
 
           &:nth-child(1),
           &:nth-child(2) {
-            flex-grow: 0;
-            width: 48%;
+            flex: 1 auto;
+            width: 45%;
           }
 
           &[type="checkbox"] {
@@ -66,9 +66,8 @@
           &[type="button"] {
             border: none;
             height: auto;
-            width: 40%;
             font-weight: 700;
-            flex-grow: 0;
+            flex: 0;
           }
         }
       }

@@ -84,6 +84,7 @@ img {
   line-height: 1;
   margin: 0 4rem;
   cursor: pointer;
+  color: #7a97ff;
 }
 .navigation-bar .links {
   display: flex;
@@ -200,11 +201,11 @@ img {
   height: 50px;
   border-radius: 5px;
   border: 2px solid #263238;
-  flex-grow: 1;
+  flex: 1;
 }
 #signup .signup--form form input:nth-child(1), #signup .signup--form form input:nth-child(2) {
-  flex-grow: 0;
-  width: 48%;
+  flex: 1 auto;
+  width: 45%;
 }
 #signup .signup--form form input[type=checkbox] {
   height: 15px;
@@ -214,9 +215,8 @@ img {
 #signup .signup--form form input[type=button] {
   border: none;
   height: auto;
-  width: 40%;
   font-weight: 700;
-  flex-grow: 0;
+  flex: 0;
 }
 
 #section-a {
